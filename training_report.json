@@ -1,0 +1,199 @@
+{
+  "model": "Linear SVM with HOG image features",
+  "classes": [
+    "$1 bill",
+    "$2 bill",
+    "$5 bill",
+    "$10 bill",
+    "$50 bill",
+    "$100 bill",
+    "receipt",
+    "invoice"
+  ],
+  "accuracy": 0.9941600155732918,
+  "balanced_accuracy": 0.9793531006444551,
+  "macro_f1": 0.9793247242913142,
+  "weighted_f1": 0.9941557866260785,
+  "classification_report": {
+    "$1 bill": {
+      "precision": 0.975,
+      "recall": 0.9590163934426229,
+      "f1-score": 0.9669421487603306,
+      "support": 122.0
+    },
+    "$2 bill": {
+      "precision": 0.992,
+      "recall": 1.0,
+      "f1-score": 0.9959839357429718,
+      "support": 124.0
+    },
+    "$5 bill": {
+      "precision": 0.976,
+      "recall": 0.9838709677419355,
+      "f1-score": 0.9799196787148594,
+      "support": 124.0
+    },
+    "$10 bill": {
+      "precision": 0.9932885906040269,
+      "recall": 0.961038961038961,
+      "f1-score": 0.976897689768977,
+      "support": 154.0
+    },
+    "$50 bill": {
+      "precision": 0.9635036496350365,
+      "recall": 0.9565217391304348,
+      "f1-score": 0.96,
+      "support": 138.0
+    },
+    "$100 bill": {
+      "precision": 0.9465648854961832,
+      "recall": 0.992,
+      "f1-score": 0.96875,
+      "support": 125.0
+    },
+    "receipt": {
+      "precision": 0.9916201117318436,
+      "recall": 0.9833795013850416,
+      "f1-score": 0.9874826147426982,
+      "support": 361.0
+    },
+    "invoice": {
+      "precision": 0.9982464929859719,
+      "recall": 0.9989972424166458,
+      "f1-score": 0.9986217266006766,
+      "support": 3989.0
+    },
+    "accuracy": 0.9941600155732918,
+    "macro avg": {
+      "precision": 0.9795279663066327,
+      "recall": 0.9793531006444551,
+      "f1-score": 0.9793247242913142,
+      "support": 5137.0
+    },
+    "weighted avg": {
+      "precision": 0.9942014168086267,
+      "recall": 0.9941600155732918,
+      "f1-score": 0.9941557866260785,
+      "support": 5137.0
+    }
+  },
+  "classification_report_text": "              precision    recall  f1-score   support\n\n     $1 bill       0.97      0.96      0.97       122\n     $2 bill       0.99      1.00      1.00       124\n     $5 bill       0.98      0.98      0.98       124\n    $10 bill       0.99      0.96      0.98       154\n    $50 bill       0.96      0.96      0.96       138\n   $100 bill       0.95      0.99      0.97       125\n     receipt       0.99      0.98      0.99       361\n     invoice       1.00      1.00      1.00      3989\n\n    accuracy                           0.99      5137\n   macro avg       0.98      0.98      0.98      5137\nweighted avg       0.99      0.99      0.99      5137\n",
+  "confusion_matrix": [
+    [
+      117,
+      0,
+      1,
+      0,
+      3,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      124,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      122,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      148,
+      1,
+      2,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      2,
+      0,
+      132,
+      4,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      0,
+      124,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      355,
+      6
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      3985
+    ]
+  ],
+  "train_support": {
+    "$1 bill": 484,
+    "$2 bill": 494,
+    "$5 bill": 494,
+    "$10 bill": 611,
+    "$50 bill": 548,
+    "$100 bill": 494,
+    "receipt": 626,
+    "invoice": 15958
+  },
+  "test_support": {
+    "$1 bill": 122,
+    "$2 bill": 124,
+    "$5 bill": 124,
+    "$10 bill": 154,
+    "$50 bill": 138,
+    "$100 bill": 125,
+    "receipt": 361,
+    "invoice": 3989
+  },
+  "skipped_images": {
+    "$1 bill": 0,
+    "$2 bill": 0,
+    "$5 bill": 0,
+    "$10 bill": 0,
+    "$50 bill": 0,
+    "$100 bill": 0,
+    "receipt": 0,
+    "invoice": 0
+  },
+  "invoice_label_id": 6,
+  "hog_image_size": [
+    64,
+    96
+  ],
+  "random_seed": 42
+}

@@ -1,0 +1,6 @@
+archive (5).zip 
+test-00000-of-00001.parquet 
+__pycache__/ 
+.document_training_*/ 
+.receipt_inspect_*/ 
+.receipt_invoice_training_*/ 
